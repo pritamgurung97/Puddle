@@ -133,3 +133,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+
+ALLOWED_HOSTS = ['localhost', '192.168.1.9']  # Add your local IP address
+
+
