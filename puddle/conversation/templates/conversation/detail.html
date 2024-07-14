@@ -2,7 +2,6 @@
 
 {% block title %} Conversation {% endblock %}
 
-
 {% block content%}
 <h1 class="mb-6 text-3xl">Conversation</h1>
 
@@ -12,9 +11,7 @@
            <div>
              <p class="mb-4"><strong>{{ message.created_by.username }}</strong> @ {{ message.created_at }} </p>
              <p>{{ message.content }}</p>
-
            </div>
-
          </div>
   {% endfor %}
 </div>
@@ -24,7 +21,6 @@
 
     {{ form.as_p }}
 
-    <button class="py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Send</button>
-</form>
+    <button type="submit" class="py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Send</button>
 </form>
 {% endblock %}
